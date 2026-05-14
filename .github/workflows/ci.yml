@@ -1,8 +1,10 @@
-name: Deploy static content to Pages
+```yaml
+name: Deploy MkDocs site to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Replace with your default branch name
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -11,27 +13,49 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Build MkDocs site
+        run: uv run mkdocs build --strict
+
+      - name: Verify generated files
+        run: |
+          ls -la site
+          test -f site/index.html
+
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # Change to './dist' or './public' if your files are in a subfolder
+          path: ./site
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+```
