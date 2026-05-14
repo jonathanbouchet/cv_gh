@@ -1,0 +1,7 @@
+- Key Competencies: Machine Learning, Data Analysis and Visualization, Mentoring, Communication
+- Machine Learning Platforms: TensorFlow, PyTorch, Scikit-Learn
+- AI systems: LLM's, RAG, Multi-Agent Systems, Evaluation
+- Cloud Platforms: AWS, Google GCS
+- Backend: Python, FastAPI
+- Databases: MongoDB, SQL
+- Libraries / tools: Numpy, Pandas, Spark, LangGraph

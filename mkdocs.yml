@@ -1,0 +1,29 @@
+site_name: Jonathan's webpage
+theme:
+  name: material
+  nav:
+  - overview: index.md
+  - Work Experience : work_experience.md
+  - Education : education.md
+  - Technical Skills : technical_skills.md
+  - Portfolio : portfolio.md.md
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+  language: en
+  palette:
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
