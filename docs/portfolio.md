@@ -1,4 +1,4 @@
-# Data Analysis
+### Data Analysis
 
 A list of selected data analysis published on `Kaggle`
                                                           
@@ -20,7 +20,7 @@ A list of selected data analysis published on `Kaggle`
     - data visualization, NLP, Topic Modelling, notebook in `python`  
 
 
-# Data Analysis apps
+### Data Analysis apps
 
 A list of selected applications
 
@@ -32,7 +32,7 @@ A list of selected applications
     - Visualization and historical data plots of Transportation System from several world cities, data from Kaggle, via citylines.co data, `R shiny`, data analysis  
 
 
-# Scientific Publications
+### Scientific Publications
 
 A list of nuclear physics publications as primary author
 
