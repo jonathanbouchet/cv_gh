@@ -6,3 +6,7 @@ In my most recent role, I focused on LLM-powered systems, including multi-agent 
 I’m particularly interested in problems where AI meets complex, messy data, and where building end-to-end systems matters as much as model performance. I enjoy designing systems that combine data, reasoning, and user interaction.
 
 For my next role, I’m looking to continue working on applied AI—especially LLM or agent-based systems—while staying close to data and maintaining a strong engineering component. Ideally in a team where I can contribute hands-on and help shape systems from early stages through production.
+
+[github](https://github.com/jonathanbouchet)
+[linkedin](https://www.linkedin.com/in/jonathanbouchet/)
+[kaggle](https://www.kaggle.com/jonathanbouchet)
